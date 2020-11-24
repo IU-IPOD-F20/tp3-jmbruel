@@ -21,9 +21,9 @@
       "points": 30
     },
     {
-      "name": "Check README and docs/TP3.plantuml",
-      "setup": "bundle install --quiet",
-      "run": "bundle exec rake",
+      "name": "Fix #0 and Check Model",
+      "setup": "sudo apt install bundler",
+      "run": "bundle install && bundle exec rake",
       "input": "",
       "output": "",
       "comparison": "included",
