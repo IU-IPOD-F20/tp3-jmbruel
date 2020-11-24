@@ -1,0 +1,36 @@
+@startuml
+
+'-----------------------------------
+' UML concepts illustrated
+' JMB 2014
+'-----------------------------------
+
+!include config.cfg
+
+abstract class Pizza {
+  ~String name
+  ~String crust
+  ~String sauce
+  ~ArrayList garnitures
+  ~void prepare()
+  ~void bake()
+  ~void cut()
+  ~void wrap()
+  +String getName()
+}
+
+class PizzaCheeseStyleBrest {
+  +PizzaCheeseStyleBrest()
+}
+Pizza <|-- PizzaCheeseStyleBrest
+
+class PizzaCheeseStyleStrasbourg {
+  +PizzaCheeseStyleStrasbourg()
+}
+Pizza <|-- PizzaCheeseStyleStrasbourg
+
+class PizzaCheeseStyleCorse as "..." {
+}
+Pizza <|-- PizzaCheeseStyleCorse
+
+@enduml
