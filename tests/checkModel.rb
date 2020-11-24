@@ -7,6 +7,7 @@
 # -------------------
 
 require "minitest/autorun"
+
 MODEL_NAME = ARGV[0] ? ARGV[0] : "TP3.plantuml"
 
 module MiniTest
@@ -46,8 +47,8 @@ class TestGeneratedModel < Minitest::Test
   def test_class_Pizzeria_is_abstract
     assert_equal(true, File.readlines(MODEL_NAME).grep(/abstract class Pizzeria\s*/).any?)
   end
+
   def test_class_Pizzeria_has_Factory
-#    assert_contains(/Pizzeria\s+[o|"<>"|-]-+> "[\d|.]" .*Factory.*/, File.readlines(MODEL_NAME).join)
     assert_equal(true, File.readlines(MODEL_NAME).grep(/Pizzeria\s+[o|"<>"|-]-+> "[\d|.]" .*Factory.*/).any?)
   end
 
