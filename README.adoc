@@ -59,7 +59,8 @@ endif::[]
 //------------------------------------ 
 
 ifdef::uk[]
-== {tdnum} initial code
+== {tdnum} initial code 
+
 This is a template for the students' assignments.
 
 ifndef::backend-pdf[]
