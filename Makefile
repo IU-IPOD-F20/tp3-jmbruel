@@ -20,8 +20,10 @@ todos:
 check: 
 	@echo "========================================"
 	@echo "==> checking the fix "
+	mvn test
+	gradle test
 	ruby tests/testfix0.rb README.adoc 
-	ruby tests/testfix11.rb 
+	ruby tests/checkModel.rb docs/TP3.plantuml 
 
 cleanrepo:
 	 git filter-branch --tree-filter 'rm -rf folder' -- --all 
