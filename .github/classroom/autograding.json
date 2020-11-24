@@ -21,19 +21,9 @@
       "points": 30
     },
     {
-      "name": "Checking UML model",
-      "setup": "",
-      "run": "mvn checkModel",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 20
-    },
-    {
-      "name": "Fix 0",
-      "setup": "",
-      "run": "ruby tests/test0.rb README.adoc",
+      "name": "Check README and docs/TP3.plantuml",
+      "setup": "bundle install --quiet",
+      "run": "bundle exec rake",
       "input": "",
       "output": "",
       "comparison": "included",
