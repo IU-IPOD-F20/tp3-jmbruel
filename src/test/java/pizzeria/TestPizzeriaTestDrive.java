@@ -36,14 +36,14 @@ public class TestPizzeriaTestDrive {
 		pizza = shopFromStrasbourg.orderPizza("cheese");
 		System.out.println("JMI has ordered a " + pizza.getName());
 
-		String expected = "Preparation of Pizza with Brest style sauce and cheese\r\n" + "Spread the pizza dough...\r\n"
-				+ "Add the sauce...\r\n" + "Add the garnitures:\r\n" + "Parmigiano reggiano\r\n"
-				+ "Bake 25 minutes at 180 degrees\r\n" + "Cut the pizza in triangles\r\n"
-				+ "Put the pizza in the official box\r\n" + "JMB has ordered a Pizza with Brest style sauce and cheese\r\n"
-				+ "Preparation of Pizza Strasbourg style with cheese\r\n" + "Spread the pizza dough...\r\n"
-				+ "Add the sauce...\r\n" + "Add the garnitures:\r\n" + "Mozzarella\r\n" + "Bake 25 minutes at 180 degrees\r\n"
-				+ "Cut in square portions\r\n" + "Put the pizza in the official box\r\n"
-				+ "JMI has ordered a Pizza Strasbourg style with cheese\r\n" + "\r\n" + "";
+		String expected = "Preparation of Pizza with Brest style sauce and cheese\n" + "Spread the pizza dough...\n"
+				+ "Add the sauce...\n" + "Add the garnitures:\n" + "Parmigiano reggiano\n"
+				+ "Bake 25 minutes at 180 degrees\n" + "Cut the pizza in triangles\n"
+				+ "Put the pizza in the official box\n" + "JMB has ordered a Pizza with Brest style sauce and cheese\n"
+				+ "Preparation of Pizza Strasbourg style with cheese\n" + "Spread the pizza dough...\n"
+				+ "Add the sauce...\n" + "Add the garnitures:\n" + "Mozzarella\n" + "Bake 25 minutes at 180 degrees\n"
+				+ "Cut in square portions\n" + "Put the pizza in the official box\n"
+				+ "JMI has ordered a Pizza Strasbourg style with cheese\n" + "\n" + "";
 
 		assertEquals(expected.trim(), outContent.toString().trim());
 	}

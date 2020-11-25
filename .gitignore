@@ -8,3 +8,4 @@ build
 gradle/
 solution
 Gemfile.lock
+bin

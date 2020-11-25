@@ -58,8 +58,14 @@ endif::[]
 :asciidoctorlink: http://asciidoctor.org/[Asciidoctor]indexterm:[Asciidoctor]
 //------------------------------------ 
 
+//------------------------------------ Badges --------
+image::../target/coverage.svg[]
+//------------------------------------ Badges --------
+
+
 ifdef::uk[]
 == {tdnum} initial code 
+
 
 This is a template for the students' assignments.
 
