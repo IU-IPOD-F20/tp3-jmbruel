@@ -36,6 +36,7 @@
                   <encoding>UTF-8</encoding>
                   <source>1.8</source>
                   <target>1.8</target>
+                  <release>9</release>
               </configuration>
           </plugin>
 		<plugin>
