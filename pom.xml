@@ -50,7 +50,8 @@
                    </archive>
                </configuration>
            </plugin>
-            <plugin>
+            <!-- Not working on CI for some java compiler compatibility :-(
+                <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>3.0.1</version>
@@ -68,14 +69,13 @@
                                 <version>2.0.12</version>
                             </docletArtifact>
                             <additionalOptions>
-                                <!--<additionalOption>...</additionalOption>-->
                                 <additionalOption>-umlCustomDirective "!include ../../docs/config.cfg"</additionalOption>
                                 <additionalOption>-createPumlFiles</additionalOption>
                             </additionalOptions>
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 </project>
