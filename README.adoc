@@ -59,7 +59,11 @@ endif::[]
 //------------------------------------ 
 
 //------------------------------------ Badges --------
-image::../target/coverage.svg[]
+image:https://github.com/IU-IPOD-F20/tp3-jmbruel/blob/master/workflows/Autograding/badge.svg["CI status", link="https://github.com/IU-IPOD-F20/tp3-jmbruel"]
+image:../../workflows/Autograding/badge.svg["CI status", link="https://github.com/IU-IPOD-F20/tp3-jmbruel"]
+image:../../workflows/classroom/badge.svg["CI status", link="https://github.com/IU-IPOD-F20/tp3-jmbruel"]
+image:https://circleci.com/gh/IU-IPOD-F20/tp3-jmbruel.svg?style=svg["IU-IPOD-F20", link="https://circleci.com/gh/IU-IPOD-F20/tp3-jmbruel"]
+ image:../target/coverage.svg[]
 //------------------------------------ Badges --------
 
 
