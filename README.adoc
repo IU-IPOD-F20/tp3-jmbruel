@@ -59,11 +59,10 @@ endif::[]
 //------------------------------------ 
 
 //------------------------------------ Badges --------
-image:https://github.com/IU-IPOD-F20/tp3-jmbruel/blob/master/workflows/GitHub+Classroom+Workflow/badge.svg["CI status", link="https://github.com/IU-IPOD-F20/tp3-jmbruel"]
-image:../../workflows/GitHub+Classroom+Workflow/badge.svg["CI status", link="https://github.com/IU-IPOD-F20/tp3-jmbruel"]
-image:../../workflows/GitHub+Classroom+Workflow/badge.svg["CI status", link="https://github.com/IU-IPOD-F20/tp3-jmbruel"]
-image:https://circleci.com/gh/IU-IPOD-F20/tp3-jmbruel.svg?style=svg["IU-IPOD-F20", link="https://circleci.com/gh/IU-IPOD-F20/tp3-jmbruel"]
+image:https://img.shields.io/github/workflow/status/IU-IPOD-F20/tp3-jmbruel/GitHub%20Classroom%20Workflow?&logo=github-actions&logoColor=white&label=auto+grading["CI status", link="https://github.com/IU-IPOD-F20/tp3-jmbruel"]
+image:https://circleci.com/gh/IU-IPOD-F20/tp3-jmbruel.svg?style=shield["IU-IPOD-F20", link="https://circleci.com/gh/IU-IPOD-F20/tp3-jmbruel"]
  image:../target/coverage.svg[]
+image:https://tokei.rs/b1/github/IU-IPOD-F20/tp3-jmbruel?category=code[]
 //------------------------------------ Badges --------
 
 
