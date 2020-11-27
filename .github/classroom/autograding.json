@@ -21,24 +21,34 @@
       "points": 30
     },
     {
-      "name": "Checking UML model",
-      "setup": "",
-      "run": "mvn checkModel",
+      "name": "Fix #0 and Check Model",
+      "setup": "sudo apt install bundler",
+      "run": "bundle install && bundle exec rake",
       "input": "",
       "output": "",
       "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Main execution (PizzaTestDrive)",
+      "setup": "mvn install",
+      "run": "java -jar target/pizzeria.jar",
+      "input": "",
+      "output": "Preparation of Pizza with Brest style sauce and cheese\r\nSpread the pizza dough...\r\nAdd the sauce...\r\nAdd the garnitures:\r\nParmigiano reggiano\r\nBake 25 minutes at 180 degrees\r\nCut the pizza in triangles\r\nPut the pizza in the official box\r\nJMB has ordered a Pizza with Brest style sauce and cheese\r\nPreparation of Pizza Strasbourg style with cheese\r\nSpread the pizza dough...\r\nAdd the sauce...\r\nAdd the garnitures:\r\nMozzarella\r\nBake 25 minutes at 180 degrees\r\nCut in square portions\r\nPut the pizza in the official box\r\nJMI has ordered a Pizza Strasbourg style with cheese\r\n",
+      "comparison": "exact",
       "timeout": 10,
       "points": 20
     },
     {
-      "name": "Fix 0",
-      "setup": "",
-      "run": "ruby tests/test0.rb README.adoc",
+      "name": "Code Coverage",
+      "setup": "mvn install",
+      "run": "mvn verify",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 20
+      "points": 10
     }
   ]
 }

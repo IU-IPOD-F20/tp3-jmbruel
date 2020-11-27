@@ -58,8 +58,18 @@ endif::[]
 :asciidoctorlink: http://asciidoctor.org/[Asciidoctor]indexterm:[Asciidoctor]
 //------------------------------------ 
 
+//------------------------------------ Badges --------
+image:https://img.shields.io/github/workflow/status/IU-IPOD-F20/tp3-jmbruel/GitHub%20Classroom%20Workflow?&logo=github-actions&logoColor=white&label=auto+grading["CI status", link="https://github.com/IU-IPOD-F20/tp3-jmbruel"]
+image:https://circleci.com/gh/IU-IPOD-F20/tp3-jmbruel.svg?style=shield["IU-IPOD-F20", link="https://circleci.com/gh/IU-IPOD-F20/tp3-jmbruel"]
+ image:../target/coverage.svg[]
+image:https://tokei.rs/b1/github/IU-IPOD-F20/tp3-jmbruel?category=code[]
+//------------------------------------ Badges --------
+
+
 ifdef::uk[]
-== {tdnum} initial code
+== {tdnum} initial code 
+
+
 This is a template for the students' assignments.
 
 ifndef::backend-pdf[]
@@ -87,19 +97,19 @@ endif::[]
 //------------------------------------ 
 == {assignment}
 
-{lastName}:: BRUEL
+{lastName}:: DOE
 
-{firstName}:: Jean-Michel
+{firstName}:: John
 
 {group} #::
 
 [%interactive]
-- [x] {Enseignants}
+- [ ] {Enseignants}
 - [ ] 1
 - [ ] 2
 - [ ] 3
 - [ ] 4
-- [ ] Innopolis
+- [X] Innopolis
 
 //------------------------------------ 
 == {requirements}
