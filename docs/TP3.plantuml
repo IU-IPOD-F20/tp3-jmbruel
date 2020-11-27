@@ -93,4 +93,12 @@ class PizzeriaStrasbourg [[java:pizzeria.impl.PizzeriaStrasbourg]] {
 class Pizzeria [[java:pizzeria.Pizzeria]] {
 }
 Pizzeria <|-- PizzeriaStrasbourg
+
+' Dependencies added manually
+PizzeriaFactory ..> Pizzeria
+PizzaFactory ..> Pizza
+PizzaTestDrive ..> PizzeriaFactory
+PizzaTestDrive ..> PizzaFactory
+
+
 @enduml

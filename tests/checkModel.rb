@@ -49,7 +49,7 @@ class TestGeneratedModel < Minitest::Test
   end
 
   def test_class_Pizzeria_has_Factory
-    assert_equal(true, File.readlines(MODEL_NAME).grep(/Pizzeria\s+[o|"<>"|-]-+> "[\d|.]" .*Factory.*/).any?)
+    assert_equal(true, File.readlines(MODEL_NAME).grep(/Pizzeria\s+[o|"<>"|-]-+> .*Factory.*/).any?)
   end
 
   def test_Pizzeria_has_concrete_implementation
