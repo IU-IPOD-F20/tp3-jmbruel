@@ -10,7 +10,6 @@
 
 	<properties>
 		<junit.version>4.13</junit.version>
-	        <!------------------------------------ sourceEncoding ----------------------->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         	<!--<project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>-->
 	</properties>
