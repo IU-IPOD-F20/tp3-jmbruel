@@ -63,6 +63,9 @@ image:https://img.shields.io/github/workflow/status/IU-IPOD-F20/tp3-jmbruel/GitH
 image:https://circleci.com/gh/IU-IPOD-F20/tp3-jmbruel.svg?style=shield["IU-IPOD-F20", link="https://circleci.com/gh/IU-IPOD-F20/tp3-jmbruel"]
  image:../target/coverage.svg[]
 image:https://tokei.rs/b1/github/IU-IPOD-F20/tp3-jmbruel?category=code[]
+image:https://img.shields.io/badge/License-MIT-yellow.svg[License: MIT, linkl="https://opensource.org/licenses/MIT"]
+
+
 //------------------------------------ Badges --------
 
 
