@@ -24,7 +24,7 @@ public class TestPizzeriaTestDrive {
 		System.setErr(new PrintStream(errContent));
 	}
 
-// Test code stolen from Kami Saitov, Innopolis University Student -- F20
+// Test code stolen from Kami Saitov, Innopolis University Student -- F20  
 	@Test
 	public void pizzaTestDriveTest() {
 		Pizzeria shopFromBrest = PizzeriaFactory.getInstance().create("Brest");
@@ -46,25 +46,6 @@ public class TestPizzeriaTestDrive {
 				+ "JMI has ordered a Pizza Strasbourg style with cheese\n" + "\n" + "";
 
 		assertEquals(expected.trim(), outContent.toString().trim());
-	}
-
-	@Test
-	public void checkPizzasFromDifferentPizzeriasAreDifferent() {
-		Pizzeria strasbourg = PizzeriaFactory.getInstance().create("Strasbourg");
-		Pizzeria brest = PizzeriaFactory.getInstance().create("Brest");
-
-		Pizza pizza1 = strasbourg.orderPizza("cheese");
-		Pizza pizza2 = brest.orderPizza("cheese");
-
-		assertNotEquals(pizza1, pizza2);
-	}
-
-	@Test
-	public void orderPizza() {
-		Pizzeria strasbourg = PizzeriaFactory.getInstance().create("Strasbourg");
-		Pizza pizza1 = strasbourg.orderPizza("cheese");
-
-		assertNotEquals(pizza1, null);
 	}
 
 	@After
