@@ -24,7 +24,7 @@ public class TestPizzeriaTestDrive {
 		System.setErr(new PrintStream(errContent));
 	}
 
-// Test code stolen from Kami Saitov, Innopolis University Student -- F20  
+// Test code stolen from Kamil Saitov, Innopolis University Student -- F20  
 	@Test
 	public void pizzaTestDriveTest() {
 		Pizzeria shopFromBrest = PizzeriaFactory.getInstance().create("Brest");
