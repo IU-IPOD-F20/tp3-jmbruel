@@ -15,9 +15,12 @@ repositories {
 }
 
 dependencies {
+    implementation 'io.github.handofgod94:jacoco-cov-badge-maven-plugin:1.1.0'
+    implementation 'io.cucumber:cucumber-core:6.8.2'
     runtimeOnly 'org.junit.jupiter:junit-jupiter-api:5.6.0'
-    testImplementation 'junit:junit:4.12'
-//    umlDoclet "nl.talsmasoftware:umldoclet:2.0.12"
+    testImplementation 'junit:junit:4.13.1'
+    testImplementation 'io.cucumber:cucumber-java:6.8.2'
+    testImplementation 'io.cucumber:cucumber-junit:6.8.2'
 }
 
 group = 'com.iutblagnac'
@@ -36,14 +39,3 @@ publishing {
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
-
-// configurations {
-//     umlDoclet
-// }
-
-// javadoc {
-//     source = sourceSets.main.allJava
-//     options.docletpath = configurations.umlDoclet.files.asType(List)
-//     options.doclet = "nl.talsmasoftware.umldoclet.UMLDoclet"
-//     //options.addStringOption "additionalParamName", "additionalParamValue"
-// }
