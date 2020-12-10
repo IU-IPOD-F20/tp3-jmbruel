@@ -28,6 +28,12 @@ check:
 cleanrepo:
 	 git filter-branch --tree-filter 'rm -rf folder' -- --all 
 
+badge:
+	@echo "========================================"
+	@echo "==> generating coverage badge "
+	mvn clean install
+	mvn io.github.handofgod94:jacoco-cov-badge-maven-plugin:1.1.0:badge
+
 clean:
 	rm -rf target
 	rm -rf build
