@@ -24,6 +24,12 @@ check:
 	gradle test
 	ruby tests/testfix0.rb README.adoc 
 	ruby tests/checkModel.rb docs/TP3.plantuml 
+sonarqube:
+	@echo "========================================"
+	@echo "==> Using Sonarqube to check code quality "
+	mvn sonar:sonar \
+  		-Dsonar.host.url=https://sonarqube.iut-blagnac.fr	<https://sonarqube.iut-blagnac.fr> \
+  -Dsonar.login=d1f6e2075375f8c66612fe87a9f0cc5bc7a371b9
 
 cleanrepo:
 	 git filter-branch --tree-filter 'rm -rf folder' -- --all 
